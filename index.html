@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Test work</title>
+        <link rel = "stylesheet" href = "main-style.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <table class="table1">
+            <thead style = "background-color: lightgrey;">
+                <tr>
+                    <td>Phone</td>
+                    <td>Full Name</td>
+                    <td>E-mail</td>
+                    <td>Address</td>
+                    <td id="Operation">Operation</td>
+                </tr>
+            </thead>
+            <tbody id="mainTable"></tbody>
+        </table>
+        <table class="table2" id="createTable">
+            <tr><td>Phone: <input type="text" id="phone"></td></tr>
+            <tr><td>Full Name: <input type="text" id="fullName"></td></tr>
+            <tr><td>E-mail: <input type="text" id="email"></td></tr>
+            <tr><td>Address: <input type="text" id="address"></td></tr>
+            <tr><td><input type="submit" value="Add new record (or Save)" onclick="addNewInfo('mainTable'); return;"></td></tr>
+        </table>
+    </body>
+</html>
