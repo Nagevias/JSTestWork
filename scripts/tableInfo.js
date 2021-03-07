@@ -1,3 +1,4 @@
+//Updating and showing all of the elements of the table on window load
 window.onload = () => {
     updateInfoTable();
 };

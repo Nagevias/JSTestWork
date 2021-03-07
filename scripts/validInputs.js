@@ -1,9 +1,11 @@
+//Getting values from the fields
 let validation = () => {
     var phone = document.getElementById('phone').value;
     var fullName = document.getElementById('fullName').value;
     var email = document.getElementById('email').value;
     var address = document.getElementById('address').value;
 
+    //Alerts if something is not right
 if (phone === '') {
     alert('"Phone" field is empty. Please, enter some information');
     return false;
@@ -43,6 +45,7 @@ else if (!isAddress(address)){
 return true;
 }
 
+//Using regex expressions to check if all the fields are valid
 let isPhone = (phone) => {
     return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(phone);
 };
